@@ -1,0 +1,36 @@
+package unit_01;
+
+public class P3_Task01_VariablesAndDataTypesInJava {
+     static int a= 11;   // static variable
+     int b= 10;
+	public static void main(String[] args) {
+
+     
+		int a= 5;     //local variable
+		
+		newclass obj =new newclass();
+		System.out.println("Instance Variable = " + obj.p);
+		System.out.println("Static Variable = " + a);
+		typeConversionAndTypeCasting();
+	}
+
+ static void typeConversionAndTypeCasting()
+{
+	double f;  // 64 slots
+	int i =10;  // 32 slots
+	f=i;   //Type Conversion
+	System.out.println("Type Conversion = " + f);
+	
+	double g =20;   // 64 slots
+	int j;         // 32 slots
+	j=(int)g;    //Type Casting
+	 
+	// 32 bits = 64 bits
+	
+	System.out.println( "Type Casting = " + j ) ;
+}
+}
+class newclass
+{
+	int p=100;
+}
